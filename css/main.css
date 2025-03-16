@@ -1,0 +1,243 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ===== My CSS ===== */
+
+*{
+    box-sizing : border-box;
+}
+
+body { 
+    font-family: "Open Sans", sans-serif;
+}
+
+
+h1, h2, h4, h5{
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+section {
+    padding: 10px 0;
+}
+
+/* ----- Header Section ------ */
+/* ----- slogan ----- */
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange; 
+    color: white; 
+    padding: 20px 10px; 
+    border-radius: 5px; 
+    font-size: 20px;
+    text-align: center;
+    max-width: 95%; 
+    margin: 40px auto; 
+    width: 100%;
+    
+}
+
+.slogan img {
+    width: 20px; 
+    height: auto;
+    margin-left: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    .slogan {
+        font-size: 20px; 
+        padding: 20px 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        margin: 40px 20px;
+    }
+
+    .slogan img {
+        width: 20px;
+        margin-left: 8px;
+    }
+}
+
+/* ----- Navigation Bar ----- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+    max-width: 95%; 
+ 
+}
+
+/*  Logo Styles */
+nav .logo img {
+    height: 80px;
+    padding:10px
+}
+
+/*  Navigation Menu */
+nav .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav .nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    
+}
+
+/*  Sign Up and Login Styles */
+nav .sign-up {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav .sign-up li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+nav .login-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+nav .sign-btn {
+    background-color:  white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+nav .login-btn:hover {
+    opacity: 0.9;
+}
+
+
+/*  Mobile Navigation */
+@media (max-width: 768px) {
+    /* Ensure nav stays in a single row on mobile */
+    nav {
+        flex-direction: row; 
+        align-items: center;
+        padding: 10px;
+        padding-top: 50px; 
+        margin-top: 60px;
+    }
+
+    /* Sign Up and Login Styles for mobile */
+    .sign-up {
+        display: flex;
+        gap: 10px;
+    }
+
+    .sign-up li a {
+        color: black;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    
+    .nav-menu {
+        display: none;
+        gap: 10px;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+       
+        left: 0;
+    }
+}
+
+
+/* ----- Hero Banner ------ */
